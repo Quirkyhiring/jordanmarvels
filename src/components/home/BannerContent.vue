@@ -5,7 +5,7 @@
             class="d-block img-fluid w-100"
             width="1024"
             height="480"
-            :src="require(`../../assets/svg/${svg_banner}`)"
+            :src="require(`../../assets/png/${svg_banner}`)"
             alt="image slot"
         />
         <p class = "banner-text">Book your authentic trip, <br/>get the unique experience.</p>
@@ -13,6 +13,12 @@
         <p class = "book-trip-text"> BOOK A TRIP </p>
         <img src = "../../assets/png/rentcar.png" class = "rent-car-svg" />
         <p class = "rent-car-text"> RENT A CAR </p>
+        <img src = "../../assets/png/map.png" class = "map-png"/>
+        <p class = "map-text1">MOST POPULAR</p>
+        <p class = "map-text2">Al- Khazneh, Petra</p>
+        <p class = "map-text3">DISCOVER DESTINATION</p>
+        <img src = "../../assets/png/line.png" class = "map-line-png"/>
+        <img src = "../../assets/png/next.png" class = "map-next-png"/>
         </template>
     </b-carousel-slide>
 </template>
@@ -30,13 +36,66 @@ export default {
   font-family: Poppins;
   src: url("../../assets/font/Poppins-Regular.ttf");
 }
+.banner-carousel{
+  position: relative;
+}
 
+.map-png{
+  position: absolute;
+  left: 75%;
+  top: 64.13%;
+}
+.map-line-png{
+  position: absolute;
+  left: 80%;
+  top: 78%;
+}
+.map-next-png{
+  position: absolute;
+  left: 92%;
+  top: 77%;  
+}
+.map-text3{
+  position: absolute;
+  left:83%;
+  top: 77%;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+
+.map-text2{
+  position: absolute;
+  left:80%;
+  top: 70%;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 42px;
+  color: #FFFFFF;
+}
+
+.map-text1{
+  position: absolute;
+  left: 80%;
+  top: 66%;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+  color: #FFFFFF;
+}
 .banner-text{
   position: absolute;
   left: 8.68%;
-  right: 36.39%;
-  top: 4.54%;
-  bottom: 91.63%;
+
+  top: 8.54%;
   font-family: Poppins;
   font-style: normal;
   font-weight: bold;
@@ -47,9 +106,7 @@ export default {
 .book-trip-text{
   position: absolute;
   left: 11.6%;
-  right: 81.53%;
-  top: 14.13%;
-  bottom: 85.34%;
+  top: 84.13%;
 
   font-family: Poppins;
   font-style: normal;
@@ -62,18 +119,12 @@ export default {
 .book-trip-svg{
   position: absolute;
   left: 9.1%;
-  right: 89.24%;
-  top: 14.24%;
-  bottom: 85.49%;
-
-
+  top: 84.24%;
 }
 .rent-car-text{
   position: absolute;
   left: 23.61%;
-  right: 70.21%;
-  top: 14.13%;
-  bottom: 85.34%;
+  top: 84.13%;
 
   font-family: Poppins;
   font-style: normal;
@@ -86,8 +137,6 @@ export default {
 .rent-car-svg{
   position: absolute;
   left: 21.11%;
-  right: 77.22%;
-  top: 14.11%;
-  bottom: 85.5%;
+  top: 84.11%;
 }
 </style>

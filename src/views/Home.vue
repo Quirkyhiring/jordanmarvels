@@ -2,6 +2,7 @@
   <div style ="position: relative;">
     <div id="banner">
       <b-carousel
+      
         id="carousel-1"
         v-model="slide"
         :interval="4000"
@@ -10,10 +11,13 @@
         img-width="1024"
         img-height="300"
         style="text-shadow: 1px 1px 2px #333;"
+
       >
         <!-- Slide with blank fluid image to maintain slide aspect ratio -->
-       <bannerContent svg_banner = "banner1.svg"/>
-        <bannerContent svg_banner = "banner2.svg"/>
+       <bannerContent svg_banner = "banner1.png"/>
+       <bannerContent svg_banner = "banner2.png"/>
+        <bannerContent svg_banner = "banner1.png"/>
+       <bannerContent svg_banner = "banner2.png"/>
       </b-carousel>
     </div>
     <section>
